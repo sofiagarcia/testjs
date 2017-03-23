@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6,p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+html, body {
+  font-family: 'Open Sans',sans-serif;
+  min-width: 1280px;
+}
+
+#left-side {
+  float: left;
+  min-height: 100vh;
+  width: 35%;
+  position: static;
+  background-color: #444;
+}
+/*Left Container styles */
+.left-container {
+  padding: 10% 12% 5% 35%;
+}
+.left-container  hr {
+  opacity: 0.2;
+  margin: 10% auto;
+}
+.left-container p {
+  color: #fff;
+  text-align: justify;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/*Breach List Styling*/
+#right-side {
+  min-height: 100vh;
+  z-index: 1;
+  box-shadow: -10px 0px 10px 1px #aaaaaa;
+}
+
+.info {
+  background-color: #EEE;
+  text-align: center;
+  width: 20%;
+  vertical-align: middle;
+
+}
+
+.domain-name {
+  font-weight: 600;
+}
+
+.breaches {
+  width: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #B4302C;
+  font-size: 145px;
+  background: -webkit-linear-gradient(left, #EEE , #FFF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #EEE , #FFF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #EEE , #FFF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #EEE , #FFF);
+  padding-left: 5%;
+}
+
+.breach-numbers {
+  margin: 0;
+  padding: 0;
+}

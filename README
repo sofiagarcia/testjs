@@ -1,0 +1,40 @@
+2020. 
+The number of websites breached and personal data leaked have increased
+exponentially since the most used encryption standards have been compromised.
+
+A friend of yours created a webservice to track these leaks and asked you to 
+create a website to visualize them.
+
+He created two different webservices:
+    - GET /ws/breaches?index=[a positive integer]
+        - This webservice returns an object with a "result" property containing
+          an array of at most 20 breached sites, starting at the
+          provided index (e.g calling /ws/breaches?index=0 will return the 20
+          last breached sites, /ws/breaches?index=20 the 20 next, etc.)
+        - A breached site object contains the following information:
+            - site: The domain of the breached site
+            - date: The time of the breach, in milliseconds
+            - number: The number of accounts leaked
+
+    - GET /ws/icon?site=[domain of a site]
+        - This webservice returns the url of an icon for the provided site
+        - The icons size is 58x36 pixels
+
+So here we are... Create a simple interface to display the last breaches!
+    1) Make index.html in the ./public folder look like js_mockup.psd in the ./_mockups folder, and add any additional files you'd need there as well
+    2) To start the server, open a terminal, cd to this folder and run
+        node app_simple.js
+        (See http://nodejs.org/ for instructions on how to install node)
+    3) Access the website through the port 4242 of your local machine
+
+Bonus points:
+  - The interface should enable the user to go as far in the breach history as he wants (ie. further than the first 20 entries)
+  - Do not hesitate to make use of the latest technologies, animate your interface if it can enhance the user experience
+  - Although it's 2020, 4.2% of the population still uses IE8 to browse the interweb. It would be nice if they could also use our website
+  - Instead of launching the webservices with node app_simple.js, try to launch them with node app.js. In this version, calls to webservices can fail, or take a long time. In these cases, you should provide the user with feedback when appropriate (loading, ability to retry...)
+
+Remarks: 
+  - Feel free to use any framework and/or library you're confident using. We like to see and learn about the latest frameworks, as far as they are open source and freely available!
+  - Important: You should only retrieve data through the provided webservices, and not modify these nor get the data from another source.
+
+Have fun!
